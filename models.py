@@ -19,6 +19,12 @@ class Comment(Base):
     id = Column(Integer, primary_key=True, nullable=False)
     text = Column(String, nullable=False)
 
+class Sourse(Base):
+    __tablename__ = "sources"
+
+    id = Column(Integer, primary_key=True, nullable=False)
+    name = Column(String, nullable=False)
+
 class User(Base):
     __tablename__ = "users"
 
